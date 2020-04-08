@@ -52,7 +52,7 @@ exit();
 				</a>
 
 			  	<a class="brand" href="index.html">
-			  		Kawaljeet Portal | Admin
+			  		Decoryn Portal | Admin
 			  	</a>
 
 				<div class="nav-collapse collapse navbar-inverse-collapse">
