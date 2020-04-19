@@ -1,5 +1,2 @@
-deny from all
-<Files ~ "^\w+\.(gif|jpe?g|png)$">
-order deny,allow
-allow from all
-</Files>
+RewriteCond %{REQUEST_URI} !\.(jpe?g|png|gif)$ [NC]
+RewriteRule .* - [F,L]
