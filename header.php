@@ -1,3 +1,13 @@
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-165861140-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-165861140-1');
+</script>
 <style>
     .float{
         position:relative;
@@ -76,204 +86,237 @@
         padding:5px;
         margin-left:5px;
     }
+
+    .float{
+        position:fixed;
+        width:60px;
+        height:60px;
+        bottom:40px;
+        right:40px;
+        background-color:#25d366;
+        color:#FFF;
+        border-radius:50px;
+        text-align:center;
+        font-size:30px;
+        box-shadow: 2px 2px 3px #999;
+        z-index:100;
+    }
+
+    .my-float{
+        margin-top:16px;
+    }
 </style>
+
+
+
 <header class="navbar navbar-custom container-full-sm" id="header">
+    <!--
+        <div class="header-middle" style="padding:0px !important ;width:100% !important;">
+          <div class="container" style="width:100%;">
 
-    <div class="header-middle" style="padding:0px !important ;width:100% !important;">
-        <div class="container" style="width:100%;">
 
+          <div class="header-tops" style="width:100%;">
+          <div class="container" style="width:100%;background: #ADA996;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    ">
+            <div class="row" id="top" style="margin-top:1px;padding:5px;">
+              <div class="col-6">
+                <div class="top-left-link left-side" style="background: #5dbb07;
+        padding: 8px;
+        border-radius: 25px;">
 
-            <div class="header-tops" style="width:100%;">
-                <div class="container" style="width:100%;background: #ADA996;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-">
-                    <div class="row" id="top" style="margin-top:1px;padding:5px;">
-                        <div class="col-6">
-                            <div class="top-left-link left-side" style="background: #5dbb07;
-    padding: 8px;
-    border-radius: 25px;">
+                <a href="https://api.whatsapp.com/send?phone=+918448956972&text=Contact Request." class="" target="_blank">
+                <i class="fa fa-whatsapp my-float float" style="color:white"></i>
+                <span style="font-size:20px;color:white; font-weight:bold; ">  +91 8448956972   </span>
+                </a>
 
-                                <a href="https://api.whatsapp.com/send?phone=+918448956972&text=Contact Request." class="" target="_blank">
-                                    <i class="fa fa-whatsapp my-float float" style="color:white"></i>
-                                    <span style="font-size:20px;color:white; font-weight:bold; ">  +91 8448956972   </span>
-                                </a>
-
-                            </div>
-                        </div>
-                        <div class="col-6" id="flex" style="display:flex;flex-wrap:wrap;">
-                            <div style="margin-right:2px;  font-weight:bold;  background: #f36b6b;
-    padding: 8px;
-    border-radius: 25px;">
-                                <i class="fa fa-envelope" aria-hidden="true" style="color:white;"></i> <a href="mailto:decorynsales@gmail.com" style="    color: white;
-    font-weight: bold;">decorynsales@gmail.com</a>
-
-                            </div>
-                            <!--	<div style="background-color: deepskyblue;">
-                                   <i class="fa fa-phone"  aria-hidden="true"></i> <a style="    color: white;
-                    font-weight: bold;" href="tel:8800314982" >
-                                       +91 8800314982
-                                   </a><br/>
-
-                              </div>
-                              -->
-                            <div style=" padding: 8px;
-    border-radius: 25px;">
-                                <i class="fa fa-map-marker" > </i>
-                                B- 14 Jwala Puri, DSIDC Shed Area No. - 4,
-                                Nangloi, New Delhi- 110041<br/>
-                            </div>
-
-                            <div class="top-right-link right-side">
-                                <ul>
-                                    <li class="login-icon content">
-                                        <a class="fa fa-phone">
-                                            <i class="fa fa-phone"></i>
-
-                                        </a>
-                                        <a href="admin/index.php" title="Login">Admin</a>
-                                        <!--<a href="register.html" title="Register">Register</a>-->
-                                        <div class="content-dropdown">
-                                            <ul>
-                                                <li class="login-icon"><a href="admin/index.php" title="Login"><i class="fa fa-user"></i> Admin</a></li>
-                                                <li class="login-icon"><a href="login.php" title="Login"><i class="fa fa-user"></i> Login</a></li>
-                                                <li class="login-icon"><a href="register.php" title="Login"><i class="fa fa-user"></i> Signup</a></li>
-                                                <!--    <li class="register-icon"><a href="register.html" title="Register"><i class="fa fa-user-plus"></i> Register</a></li>
-                                                 --> </ul>
-                                        </div>
-                                    </li>
+              </div>
+              </div>
 
 
 
+              <div class="col-6" id="flex" style="display:flex;flex-wrap:wrap;">
+                  <div style="margin-right:2px;  font-weight:bold;  background: #f36b6b;
+        padding: 8px;
+        border-radius: 25px;">
+                          <i class="fa fa-envelope" aria-hidden="true" style="color:white;"></i> <a href="mailto:decorynsales@gmail.com" style="    color: white;
+        font-weight: bold;">decorynsales@gmail.com</a>
 
+                  </div>
+                <!--	<div style="background-color: deepskyblue;">
+                       <i class="fa fa-phone"  aria-hidden="true"></i> <a style="    color: white;
+        font-weight: bold;" href="tel:8800314982" >
+                           +91 8800314982
+                       </a><br/>
 
-                                </ul>
-                            </div>
+                  </div>
 
-                            <div class="sh">
+                       <div style=" padding: 8px;
+        border-radius: 25px;">
+                         <i class="fa fa-map-marker" > </i>
+                      B- 14 Jwala Puri, DSIDC Shed Area No. - 4,
+    Nangloi, New Delhi- 110041<br/>
+                   </div>
+
+                   <div class="top-right-link right-side">
+                  <ul>
+                    <li class="login-icon content">
+                      <a class="fa fa-phone">
+                          <i class="fa fa-phone"></i>
+
+                      </a>
+                      <a href="admin/index.php" title="Login">Admin</a>
+                      <!--<a href="register.html" title="Register">Register</a>
+                      <div class="content-dropdown">
+                        <ul>
+                          <li class="login-icon"><a href="admin/index.php" title="Login"><i class="fa fa-user"></i> Admin</a></li>
+                            <li class="login-icon"><a href="login.php" title="Login"><i class="fa fa-user"></i> Login</a></li>
+                               <li class="login-icon"><a href="register.php" title="Login"><i class="fa fa-user"></i> Signup</a></li>
+                      <!--    <li class="register-icon"><a href="register.html" title="Register"><i class="fa fa-user-plus"></i> Register</a></li>
+                        </ul>
+                      </div>
+                    </li>
 
 
 
 
 
+                  </ul>
+                </div>
+
+                <div class="sh">
 
 
-                            </div>
-                        </div>
-                    </div>
+
+
+
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        -->
+    <style>
+
+
+    </style>
+    <hr>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href="https://api.whatsapp.com/send?phone=+918448956972&text=Contact Request." class="float" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+    </a>
+
+    <div class="row">
+
+
+
+
+
+
+
+
+
+
+
+        <div class="col-xl-3 col-md-3 col-lgmd-20per">
+            <div class="header-middle-left">
+                <div class="navbar-header float-none-sm">
+                    <a class="navbar-brand page-scroll" href="index.php" style="padding:0px;">
+                        <img src="images/mainlogo.png" style="height:80px;width:100%;    transform: scaleY(3.1);">
+
+                        <!--<img alt="Stylexpo" src="images/logo.png">-->
+                    </a>
                 </div>
             </div>
-            <style>
-
-
-            </style>
-            <hr>
-            <div class="row">
-
-
-
-
-
-
-
-
-
-
-
-                <div class="col-xl-3 col-md-3 col-lgmd-20per">
-                    <div class="header-middle-left">
-                        <div class="navbar-header float-none-sm">
-                            <a class="navbar-brand page-scroll" href="index.php" style="padding:0px;">
-                                <img src="images/mainlogo.png" style="height:100px;width:100%;    transform: scaleY(3.1);">
-
-                                <!--<img alt="Stylexpo" src="images/logo.png">-->
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-md-6 col-lgmd-60per">
-                    <div class="header-right-part">
-                        <!--<div class="category-dropdown select-dropdown">
-                          <fieldset>
-                            <select id="search-category" class="option-drop" name="search-category">
-                              <option value="">All Categories</option>
-                              <option value="20">Electronics</option>
-                              <option value="26">■ PC</option>
-                              <option value="43">&nbsp;&nbsp;&nbsp;- Dell Inspiron</option>
-                              <option value="44">&nbsp;&nbsp;&nbsp;- Hp Notebook</option>
-                              <option value="47">&nbsp;&nbsp;&nbsp;- Sony Vio</option>
-                              <option value="55">&nbsp;&nbsp;&nbsp;- Samsung Tablet</option>
-                              <option value="27">■ Mac</option>
-                              <option value="48">&nbsp;&nbsp;&nbsp;- Desktop Mac</option>
-                              <option value="49">&nbsp;&nbsp;&nbsp;- Laptop Mac</option>
-                              <option value="50">&nbsp;&nbsp;&nbsp;- Samsung Mac</option>
-                              <option value="38">&nbsp;&nbsp;&nbsp;- Android tablets</option>
-                              <option value="51">■ Laptops</option>
-                              <option value="52">&nbsp;&nbsp;&nbsp;- Accer laptop</option>
-                              <option value="56">&nbsp;&nbsp;&nbsp;- apple ipad</option>
-                              <option value="53">&nbsp;&nbsp;&nbsp;- HP Laptop</option>
-                              <option value="54">&nbsp;&nbsp;&nbsp;- DELL Laptop</option>
-                              <option value="18">jewellery</option>
-                              <option value="25">Components</option>
-                              <option value="29">■ Mice and Trackballs</option>
-                              <option value="28">■ Monitors</option>
-                              <option value="35">&nbsp;&nbsp;&nbsp;- Desktop</option>
-                              <option value="36">&nbsp;&nbsp;&nbsp;- LED</option>
-                              <option value="30">■ Printers</option>
-                              <option value="31">■ Scanners</option>
-                              <option value="32">■ Web Cameras</option>
-                              <option value="57">Books</option>
-                              <option value="17">Interior</option>
-                              <option value="24">Fashion</option>
-                              <option value="33">House Hold</option>
-                              <option value="34">Accessories</option>
-                            </select>
-                          </fieldset>
-                        </div>-->
-                        <div class="main-search">
-                            <div class="header_search_toggle desktop-view">
-                                <form action="shop.php" method="get">
-                                    <div class="search-box">
-                                        <input name="q" class="input-text" type="text" placeholder="Search Product  here...">
-                                        <button class="search-btn"></button>
-                                    </div>
-                                </form>
+        </div>
+        <div class="col-xl-6 col-md-6 col-lgmd-60per">
+            <div class="header-right-part">
+                <!--<div class="category-dropdown select-dropdown">
+                  <fieldset>
+                    <select id="search-category" class="option-drop" name="search-category">
+                      <option value="">All Categories</option>
+                      <option value="20">Electronics</option>
+                      <option value="26">■ PC</option>
+                      <option value="43">&nbsp;&nbsp;&nbsp;- Dell Inspiron</option>
+                      <option value="44">&nbsp;&nbsp;&nbsp;- Hp Notebook</option>
+                      <option value="47">&nbsp;&nbsp;&nbsp;- Sony Vio</option>
+                      <option value="55">&nbsp;&nbsp;&nbsp;- Samsung Tablet</option>
+                      <option value="27">■ Mac</option>
+                      <option value="48">&nbsp;&nbsp;&nbsp;- Desktop Mac</option>
+                      <option value="49">&nbsp;&nbsp;&nbsp;- Laptop Mac</option>
+                      <option value="50">&nbsp;&nbsp;&nbsp;- Samsung Mac</option>
+                      <option value="38">&nbsp;&nbsp;&nbsp;- Android tablets</option>
+                      <option value="51">■ Laptops</option>
+                      <option value="52">&nbsp;&nbsp;&nbsp;- Accer laptop</option>
+                      <option value="56">&nbsp;&nbsp;&nbsp;- apple ipad</option>
+                      <option value="53">&nbsp;&nbsp;&nbsp;- HP Laptop</option>
+                      <option value="54">&nbsp;&nbsp;&nbsp;- DELL Laptop</option>
+                      <option value="18">jewellery</option>
+                      <option value="25">Components</option>
+                      <option value="29">■ Mice and Trackballs</option>
+                      <option value="28">■ Monitors</option>
+                      <option value="35">&nbsp;&nbsp;&nbsp;- Desktop</option>
+                      <option value="36">&nbsp;&nbsp;&nbsp;- LED</option>
+                      <option value="30">■ Printers</option>
+                      <option value="31">■ Scanners</option>
+                      <option value="32">■ Web Cameras</option>
+                      <option value="57">Books</option>
+                      <option value="17">Interior</option>
+                      <option value="24">Fashion</option>
+                      <option value="33">House Hold</option>
+                      <option value="34">Accessories</option>
+                    </select>
+                  </fieldset>
+                </div>-->
+                <div class="main-search">
+                    <div class="header_search_toggle desktop-view">
+                        <form action="shop.php" method="get">
+                            <div class="search-box">
+                                <input name="q" class="input-text" type="text" placeholder="Search Product  here...">
+                                <button class="search-btn"></button>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <style>
-                    .social{
-                        color: #ff303;
-                        font-size:20px;
-                        margin-left:10px;
-                    }
-                </style>
-                <div class="col-xl-3 col-md-3 col-lgmd-20per">
-                    <div class="right-side float-left-xs header-right-link ">
-                        <ul>
-                            <!-- <li class="compare-icon">
-                               <a href="compare.html">
-                                 <span></span>
-                               </a>
-                             </li>-->
-
-                            <li class="share"><a title="Facebook" class=" wishlist-icon"><i class="fa fa-facebook social"> </i></a></li>
-
-                            <li class="share"><a title="Linkedin" class="linkedin"><i class="fa fa-youtube social"> </i></a></li>
-
-                            <li class="share"><a title="Pinterest" class="pinterest"><i class="fa fa-instagram social"> </i></a></li>
-
-
-
-                            <li class="side-toggle">
-                                <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button"><i class="fa fa-bars"></i></button>
-                            </li>
-                        </ul>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
+        <style>
+            .social{
+                color: #ff303;
+                font-size:20px;
+                margin-left:10px;
+            }
+        </style>
+        <div class="col-xl-3 col-md-3 col-lgmd-20per">
+            <div class="right-side float-left-xs header-right-link ">
+                <ul>
+                    <!-- <li class="compare-icon">
+                       <a href="compare.html">
+                         <span></span>
+                       </a>
+                     </li>-->
+
+
+
+                    <li class="share"><a href="https://www.youtube.com/channel/UCpsNG95M4Gg2MreLfXytr0A" title="Linkedin" class="linkedin"><i class="fa fa-youtube social"> </i></a></li>
+
+                    <li class="share"><a href="https://www.instagram.com/decorynofficial/" title="Pinterest" class="pinterest"><i class="fa fa-instagram social"> </i></a></li>
+
+
+
+                    <li class="side-toggle">
+                        <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button"><i class="fa fa-bars"></i></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
     </div>
     <div class="header-bottom">
         <div class="container">

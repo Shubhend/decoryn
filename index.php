@@ -116,7 +116,7 @@
 
 
             animation:
-                    popCorner 0.5s infinite alternate ease-in-out,
+                    infinite alternate ease-in-out,
                     textColor 5s infinite alternate ease-in-out;
 
 
@@ -129,20 +129,19 @@
 
         @keyframes textColor {
             0% {
-                color: #F44336;
+                color: grey;
             }
             25% {
-                color: #E91E63;
+                color: gray;
             }
             50% {
-                color: #9C27B0;
+                color: white;
             }
             75% {
                 color: white;
             }
             100% {
-                color: #3F51B5
-            }
+                color: black            }
     </style>
 
     <script>
@@ -159,10 +158,22 @@
     </script>
 
 
+    <?php
+    $queryset=mysqli_query($c,"select * from setting where name='header_text'");
+    $rowset=mysqli_fetch_array($queryset);
+    $queryset2=mysqli_query($c,"select * from setting where name='header_img'");
+    $rowset2=mysqli_fetch_array($queryset2);
+
+    if(file_exists('setting/'.$rowset2['data'])){
+        $src='setting/'.$rowset2['data'];
+    }else{
+        $src='banner2.png';
+    }
+
+    ?>
 
 
-
-    <section class="" style="margin-top:-20px;">
+    <section class="" style="margin-top:0px;">
 
 
         <div id="bootstrap-touch-slider" class="carousel bs-slider fade  control-round indicators-line" data-ride="carousel" data-pause="hover" data-interval="false" >
@@ -177,7 +188,7 @@
                 <div class="item active">
 
                     <!-- Slide Background -->
-                    <img src="banner2.png" alt="Bootstrap Touch Slider"  class="slide-image"/>
+                    <img src="<?php echo $src; ?>" alt="Bootstrap Touch Slider"  class="slide-image"/>
                     <div class="bs-slider-overlay"></div>
 
                     <div class="container">
@@ -185,7 +196,7 @@
                             <!-- Slide Text Layer -->
                             <div class="slide-text slide_style_left" id="settop" style="top:-350px;">
                                 <h1  data-animation="animated zoomInRight">
-                                    <p class="image-clip"> From Our Unique Design To Yours
+                                    <p class="image-clip">  <?php echo $rowset['data']; ?>
 
                                     </p>
                                 </h1>
@@ -370,7 +381,7 @@ padding:15px;">
             </div>
             <div class="col-md-3 col-sm-6 col-xs-12">
                 <div class="aboutus-banner">
-               <!--     <img src="https://www.benzoville.com/images/product/small/29128-2.png" alt="">  -->
+                    <!--     <img src="https://www.benzoville.com/images/product/small/29128-2.png" alt="">  -->
                 </div>
             </div>
             <div class="col-md-5 col-sm-6 col-xs-12">
