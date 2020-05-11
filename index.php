@@ -173,7 +173,7 @@
     ?>
 
 
-    <section class="" style="margin-top:0px;">
+    <section class="" style="margin-top:-21px;">
 
 
         <div id="bootstrap-touch-slider" class="carousel bs-slider fade  control-round indicators-line" data-ride="carousel" data-pause="hover" data-interval="false" >
