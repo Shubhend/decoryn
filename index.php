@@ -292,7 +292,7 @@
 
 
 
-    <section class=" ptb-70">
+    <section class="">
         <div class="top-cate-bg ptb-70">
             <div class="container">
                 <div class="row">
@@ -368,7 +368,7 @@ padding:15px;">
             <div class="col-md-3 col-sm-6 col-xs-12">
                 <div class="aboutus">
                     <h2 class="aboutus-title">About Us</h2>
-                    <p class="aboutus-text">Established in the year 2004, Decoryn  is a well-known manufacturer and supplier of stainless steel architectural hardware fittings, steel cutlery, hotelware accessories, builders hardware, Stainless Steel Tableware Products, Stainless Steel Bar Accessories, furniture hardware fittings. Fabricated using premium grade raw material, these products are extremely durable and require less maintenance.
+                    <p class="aboutus-text">Established in the year 2004, Here at Decoryn, we are suppliers of Hotel Equipments and catering Products for restaurants, Banquet, halls, Bars and club etc.
                         .</p>
 
 
@@ -391,10 +391,10 @@ padding:15px;">
                             <div class="iconset">
 
                             </div>
-                            <h3><b>25+ Year years Experience in Arcitechture hardware and hotelware products</b></h3><br/>
+                            <h3><b>Mr. Jaspreet Singh, who has immense experience in this industry</b></h3><br/>
                             <div class="feature-content">
                                 <h4>RAW MATERIAL USED</h4>
-                                <p>Catering to the needs of diverse industries, we manufacture the best quality stainless steel lifestyle products. Our products are manufactured using stainless steel variants.</p>
+                                <p> Our organization is committed to providing premium quality tableware, barware, cutlery, gastronomic pans, chafing dishes at industry leading prices</p>
                             </div>
                         </div>
                     </div>
@@ -405,7 +405,7 @@ padding:15px;">
                             </div>
                             <div class="feature-content">
                                 <h4>CUSTOMIZATION</h4>
-                                <p>With the help of high tech machines and equipment, we are able to custom design our range as per the specifications provided by our clients. Our engineers and technicians efficiently design a flawless range of door and furniture hardware for our clients.</p>
+                                <p>we operate under Mr. Jaspreet Singh, who has immense experience in this industry. We are establishing a large client in the domestic market.</p>
                             </div>
                         </div>
                     </div>
