@@ -15,7 +15,7 @@ else{
     {
         $category=mysqli_escape_string($con,$_POST['category']);
         $description=mysqli_escape_string($con,$_POST['description']);
-
+        $about=mysqli_escape_string($con,$_POST['about']);
         $filename=mysqli_escape_string($con,rand(12,200).$_FILES["img"]["name"]);
         $supported_image = array('gif','jpg','jpeg','png');
 
@@ -30,6 +30,7 @@ else{
 
                 $sql=mysqli_query($con,"update setting set data='$description' where name='header_text'");
 
+                $sql=mysqli_query($con,"update setting set data='$about' where name='about_text'");
                 $_SESSION['msg']=" Updated Data !!";
 
 
@@ -42,7 +43,7 @@ else{
 
         }else{
             $sql=mysqli_query($con,"update setting set data='$description' where name='header_text'");
-
+            $sql=mysqli_query($con,"update setting set data='$about' where name='about_text'");
             $_SESSION['msg']="Updated !!";
         }
 
@@ -55,7 +56,7 @@ else{
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin| Category</title>
+    <title>Admin| Others</title>
     <link type="text/css" href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link type="text/css" href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
     <link type="text/css" href="css/theme.css" rel="stylesheet">
@@ -114,6 +115,18 @@ else{
                                 </div>
 
 
+
+                                <?php
+                                $query=mysqli_query($con,"select * from setting where name='about_text'");
+                                $row=mysqli_fetch_array($query);
+
+                                ?>
+                                <div class="control-group">
+                                    <label class="control-label" for="basicinput">About Text</label>
+                                    <div class="controls">
+                                        <textarea class="span8" name="about" rows="5"><?php echo $row['data']; ?></textarea>
+                                    </div>
+                                </div>
 
                                 <div class="control-group">
                                     <label class="control-label" for="basicinput">Image</label>

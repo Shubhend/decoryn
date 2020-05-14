@@ -391,7 +391,13 @@ padding:15px;">
                             <div class="iconset">
 
                             </div>
-                            <h3><b>Mr. Jaspreet Singh, who has immense experience in this industry</b></h3><br/>
+
+                            <?php
+                            $querysetr=mysqli_query($c,"select * from setting where name='about_text'");
+                            $rowsetr=mysqli_fetch_array($querysetr);
+
+                            ?>
+                            <h3><b><?php echo $rowsetr['data']; ?></b></h3><br/>
                             <div class="feature-content">
                                 <h4>RAW MATERIAL USED</h4>
                                 <p> Our organization is committed to providing premium quality tableware, barware, cutlery, gastronomic pans, chafing dishes at industry leading prices</p>

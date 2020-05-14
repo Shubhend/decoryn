@@ -105,6 +105,13 @@
     .my-float{
         margin-top:16px;
     }
+    @media only screen and (max-width: 600px) {
+        .mobview {
+            height: 52px !important;
+            width: 48% !important;
+            transform: scaleY(3.1);
+        }
+    }
 </style>
 
 
@@ -153,8 +160,9 @@
                     <div class="header-middle-left">
                         <div class="navbar-header float-none-sm">
                             <a class="navbar-brand page-scroll" href="index.php" style="padding:0px;">
-                                <img src="images/mainlogo.png" style="height:80px;width:100%;    transform: scaleY(3.1);">
-
+                                <center>
+                                    <img class="mobview" src="images/mainlogo.png" style="height:80px;width:100%;    transform: scaleY(3.1);">
+                                </center>
                                 <!--<img alt="Stylexpo" src="images/logo.png">-->
                             </a>
                         </div>
