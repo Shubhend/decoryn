@@ -469,7 +469,8 @@ background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3
                     }
                     @media (max-width: 600px){
                         .med{
-                            height:182px;
+                            width:100%;
+                            height:auto;
                         }
                         .item{
                             flex-basis:100% !important;
@@ -492,12 +493,12 @@ background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3
                         <div style="display:flex;flex-wrap:wrap;width:100%;">
 
                             <?php
-                            $rets=mysqli_query($c,"select * from products where id='$pid'");
+                            $rets=mysqli_query($c,"select * from products where id='$pid' && status=1 ");
                             $ro=mysqli_fetch_array($rets);
                             $n=$ro['category'];
                             $na=$ro['productName'];
 
-                            $retss=mysqli_query($c,"select * from products where category='$n' or productName like '%$na%' limit 10 ");
+                            $retss=mysqli_query($c,"select * from products where category='$n'  && status=1  limit 10 ");
                             while($rvw=mysqli_fetch_array($retss))
                             {
                                 ?>
