@@ -199,12 +199,12 @@
                         $if=$g['id'];
 
 
-                        $ret=mysqli_query($c,"select * from products where category = '$if' && status=1 ");
+                        $ret=mysqli_query($c,"select * from products where category = '$if' && status=1 order by position DESC");
 
                     }else if(isset($_GET['q'])){
 
                         $t=$_GET['q'];
-                        $rrr=mysqli_query($c,"select * from products where productName like '%$t%' && status=1  ");
+                        $rrr=mysqli_query($c,"select * from products where productName like '%$t%' && status=1  order by position DESC");
                         $d=mysqli_num_rows($rrr);
 
                         if($d==0){
@@ -215,7 +215,7 @@
 
                         }else{
 
-                            $ret=mysqli_query($c,"select * from products where productName like '%$t%' && status=1  ");
+                            $ret=mysqli_query($c,"select * from products where productName like '%$t%' && status=1  order by position DESC");
 
                         }
 
@@ -225,7 +225,7 @@
                         $retf=mysqli_query($c,"select * from subcategory where subcategory = '$b'  ");
                         $gf=mysqli_fetch_array($retf);
                         $ifs=$gf['id'];
-                        $ret=mysqli_query($c,"select * from products where subCategory = '$ifs' && status=1  ");
+                        $ret=mysqli_query($c,"select * from products where subCategory = '$ifs' && status=1  order by position DESC");
 
 
                     }else if(isset($_GET['show'])){
@@ -233,7 +233,7 @@
                         $ret=mysqli_query($c,"select * from products where  status=1 ");
                     }else if(isset($_GET['company'])){
                         $comp=$_GET['company'];
-                        $ret=mysqli_query($c,"select * from products where productCompany='$comp' && status=1 ");
+                        $ret=mysqli_query($c,"select * from products where productCompany='$comp' && status=1 order by position DESC");
                     }
                     ?>
 

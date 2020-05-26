@@ -14,6 +14,7 @@ else{
 
         $productname=mysqli_escape_string($con,$_POST['productName']);
         $modelno=mysqli_escape_string($con,$_POST['modelno']);
+        $position=mysqli_escape_string($con,$_POST['position']);
         $seotitle=mysqli_escape_string($con,$_POST['seotitle']);
         $metades=mysqli_escape_string($con,$_POST['metades']);
         $altimage=mysqli_escape_string($con,$_POST['altimage']);
@@ -25,7 +26,7 @@ else{
         $ran=rand();
 
         $d=date("Y-m-d h:i:sa");
-        $sql=mysqli_query($con,"update  products set modelno='$modelno',seotitle='$seotitle',metades='$metades',altimage='$altimage',keyword='$keyword',headline='$headline', category='$category',productName='$productname',productDescription='$productdescription',updationDate='$d',status='$homeproduct' where id='$pid' ");
+        $sql=mysqli_query($con,"update  products set modelno='$modelno',seotitle='$seotitle',metades='$metades',altimage='$altimage',keyword='$keyword',headline='$headline', category='$category',productName='$productname',productDescription='$productdescription',updationDate='$d',status='$homeproduct',position='$position' where id='$pid' ");
         $_SESSION['msg']="Product Updated Successfully !!";
 
     }
@@ -189,6 +190,12 @@ else{
                                         </div>
                                     </div>
 
+                                    <div class="control-group" style="">
+                                        <label class="control-label" for="basicinput">Position</label>
+                                        <div class="controls">
+                                            <input type="text"  value="<?php echo $row['position']; ?>"  name="position"  placeholder="Position eg 1" class="span8 tip" >
+                                        </div>
+                                    </div>
 
                                     <div class="control-group" style="display:none;">
                                         <label class="control-label" for="basicinput">Product Model No</label>

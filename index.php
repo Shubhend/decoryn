@@ -313,7 +313,7 @@
 
                     <?php
 
-                    $retr=mysqli_query($c,"select * from category");
+                    $retr=mysqli_query($c,"select * from category order by position DESC");
                     while ($rowr=mysqli_fetch_array($retr))
                     {
                         $ui=htmlentities($rowr['categoryName']);

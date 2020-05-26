@@ -14,6 +14,7 @@ else{
 
         $productname=mysqli_escape_string($con,$_POST['productName']);
         $modelno=mysqli_escape_string($con,$_POST['modelno']);
+        $position=mysqli_escape_string($con,$_POST['position']);
         $seotitle=mysqli_escape_string($con,$_POST['seotitle']);
         $metades=mysqli_escape_string($con,$_POST['metades']);
         $altimage=mysqli_escape_string($con,$_POST['altimage']);
@@ -44,7 +45,7 @@ else{
         }else{
 
 
-            $sql=mysqli_query($con,"INSERT INTO products VALUES(NULL,'$category','$productname','$productdescription','$productimage1','$productimage2','$modelno','$seotitle','$metades','$altimage','$keyword','$headline','$homeproduct','$d','','$homeproduct')");
+            $sql=mysqli_query($con,"INSERT INTO products VALUES(NULL,'$category','$productname','$productdescription','$productimage1','$productimage2','$modelno','$seotitle','$metades','$altimage','$keyword','$headline','$homeproduct','$d','','$homeproduct','$position')");
 
             $productid=$con->insert_id;
             $dir="../productimages/".$productid;
@@ -176,6 +177,12 @@ else{
                                             <option value="0">No</option>
 
                                         </select>
+                                    </div>
+                                </div>
+                                <div class="control-group" style="">
+                                    <label class="control-label" for="basicinput">Position</label>
+                                    <div class="controls">
+                                        <input type="text"  value="0"  name="position"  placeholder="Position eg 1" class="span8 tip" >
                                     </div>
                                 </div>
 
